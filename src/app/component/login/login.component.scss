@@ -1,0 +1,250 @@
+.matcard {
+    width: 30vw;
+    height: 70vh;
+    margin: auto;
+    margin-top: 120px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+.topAllTitles {
+    line-height: 30px;
+}
+
+.f,
+.d {
+    color: #1a73e8;
+}
+
+.u,
+.oo {
+    color: red;
+}
+
+.n {
+    color: orange;
+}
+
+.o {
+    color: green;
+}
+
+.fundooTitle {
+    font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.3333;
+    margin-top: 30px;
+}
+
+.createAccount {
+    color: #202124;
+    padding-bottom: 0;
+    padding-top: 16px;
+    font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.3333;
+    word-break: break-word;
+}
+
+.continue {
+    color: #202124;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 1.5;
+    padding-bottom: 0;
+    padding-top: 8px;
+}
+
+.forgotEmail {
+    margin-top: 10px;
+}
+
+.useGuestMode {
+    margin-top: 30px;
+    font-size: 14.5px;
+}
+
+.forgotEmail,
+.useGuestMode {
+    margin-left: -15px;
+}
+
+.learnMore {
+    margin-left: 39px;
+}
+
+.mainContainer {
+    text-align: center;
+}
+
+.email,
+.password {
+    width: 90%;
+}
+
+.continue {
+    margin-left: 5px;
+}
+
+.emailPhonePassword {
+    margin-left: 39px;
+    margin-top: 30px;
+}
+
+.learnMore,
+.forgotEmail {
+    text-decoration: none;
+    border-radius: 4px;
+    color: rgb(26, 115, 232);
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    position: relative;
+}
+
+.sign {
+    padding-left: 18px;
+    font-size: 15px;
+    font: bolder;
+    margin-top: 6px;
+    color: rgb(26, 115, 232);
+}
+
+.signInInstead {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 43px;
+    padding-top: 60px;
+    margin-left: 23px;
+}
+
+.button {
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    height: 36px;
+    width: 90px;
+    background-color: rgb(26, 115, 232);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .matcard {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        border: transparent;
+    }
+
+    .fundooTitle {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .useGuestMode {
+        margin-top: 10px;
+        font-size: 13px;
+        margin-left: -15px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .matcard {
+        width: 90vw;
+        height: 100vh;
+        margin: auto;
+        border: none;
+    }
+
+    .continue {
+        margin: auto;
+        margin-bottom: 350px;
+    }
+
+    .fundooTitle {
+        margin-top: 40px;
+    }
+
+    .emailPhonePassword {
+        margin-left: -1px;
+        margin-top: 20px;
+        margin-top: -285px;
+    }
+
+    .email,
+    .password {
+        width: 100%;
+    }
+
+    .learnMore {
+        margin-left: -1px;
+    }
+
+    .signInInstead {
+        margin-left: -20px;
+        display: flex;
+        justify-content: space-between;
+        width: 104%;
+        margin-bottom: 30px;
+    }
+
+    .email {
+        margin-top: -100px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .matcard {
+        width: 60vw;
+        height: 60vh;
+        margin: auto;
+        border: none;
+        margin-top: 180px;
+    }
+
+    .continue {
+        margin: auto;
+        margin-bottom: 350px;
+    }
+
+    .fundooTitle {
+        margin-top: 60px;
+    }
+
+    .emailPhonePassword {
+        margin-left: -1px;
+        margin-top: 20px;
+        margin-top: -285px;
+    }
+
+    .email,
+    .password {
+        margin-left: 20px;
+    }
+
+    .learnMore {
+        margin-left: 22px;
+    }
+
+    .signInInstead {
+        margin-left: -48px;
+        display: flex;
+        justify-content: space-between;
+        width: 104%;
+        margin-bottom: 30px;
+    }
+
+    .email {
+        margin-top: -100px;
+    }
+
+    .sign {
+        padding-left: 70px;
+    }
+}

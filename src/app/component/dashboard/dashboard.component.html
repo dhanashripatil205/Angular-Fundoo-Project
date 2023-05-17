@@ -1,0 +1,126 @@
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+  <mat-toolbar color="primary" class="example-toolbar">
+    <div class="ToolBarMain">
+      <div class="ToolBarLeft">
+        <button mat-icon-button (click)="snav.toggle()" class="Burger">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <div class="MenuLogo">
+          <img src="../../../assets/keep.png" alt="Logo" class="Logo" />
+          <h1 class="HomeTitle">Fundoo Notes</h1>
+        </div>
+
+        <div class="SearchBar">
+          <img
+            src="../../../assets/search.svg"
+            alt="Searchi"
+            class="MainIcons SearchIcon" 
+          />
+          <input type="text" placeholder="Search" class="SearchArea" (keyup)="serchNotes($event)" />
+        </div>
+      </div>
+
+      <div class="ToolBarRight">
+        <div class="RightIcons">
+          <div class="InRight-Left">
+            <img
+              src="../../../assets/refresh.svg"
+              alt="Refresh"
+              class="MainIcons ToolbarSpaces"
+            />
+            <img
+              src="../../../assets/view.svg"
+              alt="List View"
+              class="MainIcons ToolbarSpaces"
+            />
+            <img
+              src="../../../assets/settings.svg"
+              alt="Settings"
+              class="MainIcons ToolbarSpaces"
+            />
+          </div>
+
+          <div class="InRight-Right">
+            <img
+              src="../../../assets/apps.svg"
+              alt="Apps"
+              class="MainIcons ToolbarSpaces"
+            />
+            <img src="../../../assets/account_circle.svg" alt="Account" (click)="logout()">
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-toolbar>
+
+  <mat-sidenav-container
+    class="example-sidenav-container"
+    [style.marginTop.px]="mobileQuery.matches ? 100 : 0"
+  >
+    <mat-sidenav
+      #snav
+      mode='side'
+      [fixedInViewport]="mobileQuery.matches"
+      fixedTopGap="100"
+    >
+      <mat-nav-list>
+        <mat-list-item routerLink="/dashboard/notes" class="NavItems"
+          ><div class="NavItemsContent">
+            <img
+              src="../../../assets/lightbulb.svg"
+              alt="Notes"
+              class="MainIcons"
+            />
+            <p>Notes </p>
+          </div></mat-list-item
+        >
+        <mat-list-item class="NavItems"
+          ><div class="NavItemsContent">
+            <img
+              src="../../../assets/reminder.svg"
+              alt="Remianders"
+              class="MainIcons"
+            />
+            <p>Remianders</p>
+          </div></mat-list-item
+        >
+        <mat-list-item class="NavItems"
+          ><div class="NavItemsContent">
+            <img
+              src="../../../assets/edit_black.svg"
+              alt="Edit Labels"
+              class="MainIcons"
+            />
+            <p>Edit Labels</p>
+          </div></mat-list-item
+        >
+        <mat-list-item routerLink="/dashboard/archive" class="NavItems"
+          ><div class="NavItemsContent">
+            <img
+              src="../../../assets/archive.svg"
+              alt="Archive"
+              class="MainIcons"
+            />
+            <p>Archive</p>
+          </div></mat-list-item
+        >
+        <mat-list-item routerLink="/dashboard/trash" class="NavItems"
+          ><div class="NavItemsContent">
+            <img
+              src="../../../assets/delete_black_24dp.svg"
+              alt="Trash"
+              class="MainIcons"
+            />
+            <p>Trash</p>
+          </div></mat-list-item
+        >
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+  <div></div>
+</div>

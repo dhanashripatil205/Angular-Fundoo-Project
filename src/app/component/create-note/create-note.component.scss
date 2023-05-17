@@ -1,0 +1,265 @@
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  
+  }
+  
+  .firstContainer {
+    margin: 35px auto 16px auto;
+    position: relative;
+    width: 600px;
+  }
+  
+  .createNoteContainer {
+
+    height: 54px !important;
+    background-color: #fff;
+    border-color: #e0e0e0;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
+      0 2px 6px 2px rgba(60, 64, 67, 0.149);
+    box-sizing: border-box;
+    opacity: 1;
+    position: relative;
+    border-radius: 8px;
+    transition-duration: 0.218s;
+    transition-property: opacity;
+  }
+  
+  .takeANote {
+    color: rgba(0, 0, 0, 0.702);
+    letter-spacing: 0.00625em;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 410;
+    line-height: 1.5rem;
+  
+    padding-top: 12px;
+    padding-left: 12px;
+  
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+  
+    box-sizing: border-box;
+    font-variant-ligatures: none;
+    outline: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  .three-buttons {
+    background-size: 24px 24px;
+    height: 46px;
+    position: absolute;
+    top: 0;
+    width: 46px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid transparent;
+
+    opacity: 0.54;
+    cursor: pointer;
+    display: inline-block;
+    outline: none !important;
+  }
+  .three-buttons:hover {
+    opacity: 0.87;
+    background-color: rgba(95, 99, 104, 0.157);
+    border-radius: 50%;
+  }
+  
+  .newList {
+
+    right: 120px;
+  }
+  
+  .newNoteWithDrawing {
+   
+    right: 12px;
+  }
+  
+  .newNoteWithImg {
+  
+    right: 66px;
+  }
+  
+  .titleDescriptionContainer {
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
+      0 2px 6px 2px rgba(60, 64, 67, 0.149);
+    box-sizing: border-box;
+    opacity: 1;
+    position: relative;
+    border-radius: 8px;
+    transition-duration: 0.218s;
+    transition-property: opacity;
+  }
+  
+  .innnerContainer {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+
+    border-color: #e0e0e0;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    transition-duration: 0.218s;
+    transition-property: background, border, opacity, box-shadow, transform;
+    transition-timing-function: ease-in;
+    color: #202124;
+  }
+  
+  .takeANoteTitle {
+    max-height: 600px;
+    overflow-y: auto;
+    min-height: 60px;
+  
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.218s ease-in;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pinImage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 44px;
+    padding: 10px 15px;
+  }
+  
+  .titleInput {
+    letter-spacing: 0.00625em;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: rgba(12, 12, 12, 0.6);
+    font-weight: 400;
+    border: none;
+    outline: none;
+    width: fit-content;
+  }
+  
+  .ping-img {
+    height: 32px;
+    width: 32px;
+    opacity: 0.71;
+    transition: opacity 0.218s ease-in;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+  
+  .ping-img:hover {
+    opacity: 0.87;
+    background-color: rgba(95, 99, 104, 0.157);
+    border-radius: 50%;
+  }
+  
+  .inputForNote {
+    padding: 4px 16px 12px 16px;
+    min-height: 46px;
+  }
+
+  
+  .closeButtonContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 0;
+  }
+  
+  .allFuntionlity_buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 12px;
+  }
+
+  .imagesInsidecreateNoteContainer{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: row;
+    margin-right: 20px;
+    margin-right: -407px;
+    margin-top: 14px;
+    opacity: 0.57;
+  
+   
+  }
+
+
+  
+  .allFuntionlity-img {
+    color: #202124;
+    opacity: 0.71;
+    height: 22px;
+    width: 30px;
+
+    border-radius: 50%;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+  
+  .redu {
+    transform: scaleX(-1);
+  }
+  
+  .allFuntionlity-img:hover {
+    opacity: 0.87;
+    background-color: rgba(95, 99, 104, 0.157);
+    border-radius: 50%;
+  }
+  
+  .closeButton {
+    color: rgba(0, 0, 0, 0.87);
+    text-overflow: ellipsis;
+ 
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+
+    height: 36px;
+    width: 86px;
+    text-align: center;
+    margin-right: 5px;
+    margin-top: 5px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .colorMenu-main{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  
+  .colors{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    padding: 0px 8px 0px 8px;
+    gap: 5px;
+  }
+  
+  .color-button{
+    height: 26px;
+    width: 24px;
+    border-radius: 50%;
+
+  }
+  
+  ::ng-deep .mat-mdc-menu-panel.mat-mdc-menu-panel {
+    min-width: 112px;
+    max-width: 510px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+  }
+  

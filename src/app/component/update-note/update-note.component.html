@@ -1,0 +1,22 @@
+<mat-card class="matCardContainer">
+    <mat-card-content class="matCardContent" [style.background-color]="data.color" [style.border-color]="data.color">
+        <div class="takeANote">
+            <div class="titleAndNoteInput">
+                <textarea class="inputTitle" placeholder="Title" [(ngModel)]="title"
+                    [style.background-color]="data.color" [style.border-color]="data.color"></textarea> <img
+                    src="../../../assets/Pin.svg" alt="" class="pinImage" />
+            </div>
+            <div class="noteInput">
+                <textarea type="text" class="inputTitle" placeholder="Take a note..." [(ngModel)]="description"
+                    [style.background-color]="data.color" [style.border-color]="data.color"></textarea>
+            </div>
+        </div>
+
+        <div class="closeButtonsMainContainer">
+            <app-icons class="icons" (NotesDisplay)="reciveNotesDisplay($event)"></app-icons>
+            <div class="closeButtonsMainContainer"></div>
+            <button mat-button class="closeButton" (click)="closeDialog()">Close
+            </button>
+        </div>
+    </mat-card-content>
+</mat-card>

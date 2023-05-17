@@ -1,0 +1,2 @@
+<app-create-note (refresh)='getAllNotes()'></app-create-note>
+<app-displaynotes [AllNotesData] ='dataUpdated' (DisplayGetAllNotes)="receiveDisplayGetAllNotes($event)"></app-displaynotes>

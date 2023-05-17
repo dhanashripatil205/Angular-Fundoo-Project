@@ -1,0 +1,31 @@
+<div class="icons">
+  <button class="notesbutton">
+    <img src="../../../assets/reminder.svg">
+    <img src="../../../assets/add_account_circle.svg">
+
+    <img src="../../../assets/color.svg" [matMenuTriggerFor]="paletteMenu">
+
+    <mat-menu class="menuSize" #paletteMenu="matMenu">
+      <div class="row clr">
+
+        <div *ngFor='let colors of colorArray'>
+          <button class="colorIcon" [style.background]="colors.code" (click)="selectColor(colors.code)"></button>
+        </div>
+      </div>
+    </mat-menu>
+
+    <img src="../../../assets/image.svg">
+    <img src="../../../assets/archive.svg" (click)="archive()">
+
+    <img src="../../../assets/dot.svg" [matMenuTriggerFor]="more">
+    <mat-menu #more="matMenu">
+      <button mat-menu-item (click)="trash()">Delete note</button>
+      <button mat-menu-item>Add Label</button>
+      <button mat-menu-item>Add drawing</button>
+      <button mat-menu-item>Make a copy</button>
+      <button mat-menu-item>Show checkboxes</button>
+      <button mat-menu-item>Copy to google Docs</button>
+    </mat-menu>
+  </button>
+
+</div>

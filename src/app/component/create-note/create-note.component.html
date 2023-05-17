@@ -1,0 +1,46 @@
+<div class="mainContainer">
+    <div class="firstContainer" >
+        <div class="createNoteContainer " (click)="showicon()" *ngIf="!show">
+            <div class="takeANote">
+                Take a note...
+            </div>
+            <div class="imagesInsidecreateNoteContainer" *ngIf="!show">
+                <img src="../../../assets/right.svg">
+                <img src="../../../assets/pen.svg"> 
+                <img src="../../../assets/image.svg">
+            </div>
+
+            <div role="button" class="newList three-buttons" matTooltip="New list" aria-label="New list"
+                style="user-select: none;" tabindex="0"></div>
+            <div role="button" class="newNoteWithDrawing three-buttons" matTooltip="New Note with Image"
+                aria-label="New Note with drawing" style="user-select: none;" tabindex="0"></div>
+            <div role="button" class="newNoteWithImg three-buttons" matTooltip="New Note with drawing"
+                aria-label="New Note with Image" style="user-select: none;" tabindex="0"></div>
+        </div>
+
+        <div class="titleDescriptionContainer" *ngIf="show">
+            <form class="innnerContainer" [formGroup]="notes"  >
+                <div class="takeANoteTitle">
+                    <div class="pinImage">
+                        <input type="text" class="titleInput" placeholder="Title" formControlName="title">
+                        <img src="../../../assets/Pin.svg" alt="" class="ping-img">
+                    </div>
+
+                    <div class="inputForNote">
+                        <input type="text" class="titleInput" placeholder="Take a note..." formControlName="description">
+                    </div>
+                </div>
+
+                <div class="closeButtonContainer">
+              
+                    <app-icons></app-icons>
+
+                    <button mat-button class="closeButton" (click)="createNote()">Close</button>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+
+</div>

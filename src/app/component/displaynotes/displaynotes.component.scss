@@ -1,0 +1,61 @@
+.displayNoteContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 1250;
+  justify-content: flex-start;
+  margin-left: 255px;
+
+}
+
+.matcard {
+  width: 280px;
+
+  height: fit-content;
+
+  margin-top: 15px;
+  margin-right: 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(185, 185, 185);
+
+}
+
+.mat-mdc-card:hover {
+  box-shadow: 0px 0px 10px 0px #9b9b9b;
+  --mdc-elevated-card-container-color: #fff;
+
+  opacity: 0.74;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
+  font: 15px sans-serif;
+}
+
+.mainContainer:hover {
+  .icon {
+    visibility: visible;
+  }
+
+  .pin {
+    visibility: visible;
+  }
+}
+
+.pin {
+  visibility: hidden;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 25px;
+  visibility: hidden;
+}

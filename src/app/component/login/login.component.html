@@ -1,0 +1,54 @@
+
+<form [formGroup]="loginForm" class="main">
+
+<mat-card class="matcard">
+    <div class="mainContainer">
+        <div class="fundooTitle">
+          <b class="f">F</b>
+          <b class="u">U</b>
+          <b class="n">N</b>
+          <b class="d">D</b>
+          <b class="o">O</b>
+          <b class="oo">O</b>
+        </div>
+        <div class="createAccount">Sign in</div>
+        <div class="continue">to continue to Fundoo</div>
+
+    </div>
+
+
+
+<div class="emailPhonePassword">
+        <p>
+          <mat-form-field class="email" appearance="outline">
+            <mat-label>Email or phone</mat-label>
+            <input matInput formControlName = "Email"/>
+            
+            <mat-hint class="forgotEmail">Forgot email?</mat-hint>
+
+          </mat-form-field>
+        </p>
+        <br>
+        <p>
+          <mat-form-field class="password" appearance="outline">
+            <mat-label>Password</mat-label>
+            <input type="password" matInput formControlName = "Password"/>
+            <mat-hint class="useGuestMode">Not your computer? Use Guest mode to sign in privately.</mat-hint>
+
+          </mat-form-field>
+
+        </p>
+
+</div>
+<br>
+<div class="learnMore">Learn more</div>
+
+<section>
+    <div class="signInInstead">
+      <span class="sign">Create account</span>
+      <button class="button" mat-raised-button (click)="reply()">Next</button>
+    </div>
+  </section>
+  </mat-card>
+
+</form>

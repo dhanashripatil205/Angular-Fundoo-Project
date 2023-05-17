@@ -1,0 +1,304 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.matcard {
+    //     width: 45vw;
+    //     height: 80vh;
+    //    margin: auto;
+    //    margin-top: 80px;
+
+    border-radius: 10px;
+    border: 1px solid rgb(243, 223, 223);
+}
+
+.firstAndLastName,
+.passwordConfirm,
+.secondContainer {
+    display: flex;
+}
+
+.firstAndLastName {
+    padding-top: 20px;
+}
+
+.firstContainer {
+    width: 60%;
+    margin-left: 25px;
+}
+
+.secondContainer {
+    width: 40%;
+}
+
+.mainContainer {
+    display: flex;
+    height: 100%;
+}
+
+.image {
+    height: 250px;
+    width: 250px;
+    margin-top: 120px;
+}
+
+.topAllTitles {
+    line-height: 30px;
+}
+
+.fundooTitle {
+    font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.3333;
+    margin-top: 25px;
+}
+
+.createAccount {
+    color: #202124;
+    padding-bottom: 0;
+    padding-top: 16px;
+    font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.3333;
+    word-break: break-word;
+}
+
+.continue {
+    color: #202124;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 1.5;
+    padding-bottom: 0;
+    padding-top: 8px;
+}
+
+.signInInstead {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+    padding-top: 60px;
+    margin-top: -40px;
+}
+
+.sign {
+    padding-left: 18px;
+    font-size: 15px;
+    font: bolder;
+    margin-top: 6px;
+    color: rgb(26, 115, 232);
+}
+
+.checkbox {
+    padding-left: 6px;
+    padding-top: 9px;
+}
+
+.lastname {
+    padding-left: 10px;
+}
+
+.username {
+    width: 106%;
+    height: 50px;
+}
+
+.passwordConfirm {
+    height: 60px;
+}
+
+.button {
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    height: 36px;
+    width: 90px;
+    background-color: rgb(26, 115, 232);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.fundooTitle,
+.continue {
+    margin-bottom: 15px;
+}
+
+.oneAccount {
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 20px;
+}
+
+.working {
+    padding-left: 40px;
+}
+
+.f,
+.d {
+    color: #1a73e8;
+}
+
+.u,
+.oo {
+    color: red;
+}
+
+.n {
+    color: orange;
+}
+
+.o {
+    color: green;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .matcard {
+        margin-left: 30px;
+        display: block;
+        width: 470px;
+        height: 790px;
+        margin-left: -15px;
+        margin-top: -30px;
+        position: relative;
+        align-items: center;
+        border-style: 0.5px solid #c4c4c4;
+        border-radius: 8px;
+    }
+
+    .secondContainer {
+        display: none;
+    }
+
+    .firstAndLastName,
+    .passwordConfirm {
+        display: inline;
+    }
+
+    .fname,
+    .lastname,
+    .username,
+    .password,
+    .confirm {
+        width: 107%;
+    }
+
+    .lastname {
+        margin-left: -10px;
+    }
+
+    .fundooTitle,
+    .continue {
+        margin-bottom: 15px;
+    }
+
+    .use8OrMoreCharacter {
+        font-size: 12px;
+        margin-top: -10px;
+    }
+
+    .use8OrMoreCharacterNew {
+        font-size: 12px;
+        margin-top: -30px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .matcard {
+        display: block;
+        width: 470px;
+        height: 820px;
+        margin-left: -10px;
+        margin-top: -50px;
+        position: relative;
+        align-items: center;
+        border-style: 0.5px solid #c4c4c4;
+        border-radius: 8px;
+    }
+
+    .secondContainer {
+        display: none;
+    }
+
+    .firstAndLastName,
+    .passwordConfirm {
+        display: inline;
+    }
+
+    .fname,
+    .lastname,
+    .username,
+    .password,
+    .confirm {
+        width: 117%;
+    }
+
+    .fundooTitle {
+        font-size: 16px;
+        margin-top: 67px;
+    }
+
+    .createAccount {
+        font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+        font-size: 19px;
+        font-weight: 510px;
+        line-height: 1.3333;
+    }
+
+    .lastname {
+        margin-left: -10px;
+    }
+
+    .use8OrMoreCharacter {
+        font-size: 12px;
+        margin-top: -10px;
+    }
+
+    .use8OrMoreCharacterNew {
+        font-size: 9px;
+        margin-top: -30px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .matcard {
+        display: block;
+        width: 500px;
+        height: 597px;
+        margin: auto;
+        margin-top: 180px;
+        margin-left: 70px;
+        position: relative;
+        align-items: center;
+        border-style: 0.5px solid #c4c4c4;
+        border-radius: 8px;
+    }
+
+    .secondContainer {
+        display: none;
+    }
+
+    .createAccount {
+        font-size: 19px;
+    }
+
+    .use8OrMoreCharacterNew {
+        font-size: 10px;
+        color: grey;
+    }
+
+    .username {
+        width: 164%;
+    }
+
+    .fundooTitle {
+        font-size: 18px;
+    }
+}

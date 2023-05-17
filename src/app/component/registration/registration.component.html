@@ -1,0 +1,105 @@
+<div class="container">
+  <form [formGroup]="registrationForm">
+    <mat-card class="matcard">
+      <div class="mainContainer">
+        <div class="firstContainer">
+          <mat-card-content>
+            <div class="topAllTitles">
+              <div class="fundooTitle">
+                <b class="f">F</b>
+                <b class="u">U</b>
+                <b class="n">N</b>
+                <b class="d">D</b>
+                <b class="o">O</b>
+                <b class="oo">O</b>
+              </div>
+              <span class="createAccount">Create your Fundoo Account</span>
+              <div class="continue">to continue to Gmail</div>
+            </div>
+
+            <div class="firstAndLastName">
+              <p>
+                <mat-form-field appearance="outline" class="fname">
+                  <mat-label class="firstname">First name</mat-label>
+                  <input matInput formControlName="firstname" />
+                  <mat-hint></mat-hint>
+                </mat-form-field>
+              </p>
+
+              <p>
+                <mat-form-field class="lastname" appearance="outline">
+                  <mat-label>Last name</mat-label>
+                  <input matInput formControlName="lastname" />
+                </mat-form-field>
+              </p>
+            </div>
+            <div>
+              <p>
+                <mat-form-field class="username" appearance="outline">
+                  <mat-label>Username</mat-label>
+                  <input matInput formControlName="username" />
+                </mat-form-field>
+              </p>
+            </div>
+
+            <div class="use8OrMoreCharacter">
+              <mat-hint
+                >You can use letters, numbers & fullstops.
+                <br />
+                <br />
+              </mat-hint>
+            </div>
+
+            <div class="passwordConfirm">
+              <p>
+                <mat-form-field appearance="outline" class="password">
+                  <mat-label>Password</mat-label>
+                  <input matInput formControlName="password" />
+                </mat-form-field>
+              </p>
+
+              <p>
+                <mat-form-field class="lastname confirm" appearance="outline">
+                  <mat-label>Confirm</mat-label>
+                  <input matInput />
+                </mat-form-field>
+              </p>
+            </div>
+            <div class="use8OrMoreCharacterNew">
+              <mat-hint
+                >Use 8 or more characters with a mix of letters,numbers &symbols
+              </mat-hint>
+            </div>
+          </mat-card-content>
+
+          <section class="example-section">
+            <mat-checkbox class="checkbox">Show Password</mat-checkbox>
+          </section>
+
+          <section>
+            <div class="signInInstead">
+              <div class="sign"><b>Sign In Instead</b></div>
+              <button class="button" mat-raised-button (click)="hitButton()">
+                Next
+              </button>
+            </div>
+          </section>
+        </div>
+
+        <div class="secondContainer">
+          <div>
+            <img
+              class="image"
+              src="https://ssl.gstatic.com/accounts/signup/glif/account.svg"
+              alt="Google"
+            />
+            <p class="oneAccount">
+              One Account. All of Fundoo <br />
+              <span class="working">working for you.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </mat-card>
+  </form>
+</div>

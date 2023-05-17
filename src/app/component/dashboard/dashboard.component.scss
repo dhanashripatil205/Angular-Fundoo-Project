@@ -1,0 +1,243 @@
+mat-toolbar
+{
+    background-color: white !important;
+    padding: 0% ;
+    height: 70px;
+    border-bottom: 1px solid rgb(223, 223, 223) !important;
+    height: 10%;
+}
+
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .example-is-mobile .example-toolbar {
+    position: fixed;
+    /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+    z-index: 2;
+  }
+  
+  h1.example-app-name {
+    margin-left: 8px;
+  }
+  
+  .example-sidenav-container {
+    /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+       causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+    flex: 1;
+  }
+  
+  .example-is-mobile .example-sidenav-container {
+    /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+       `<body>` to be our scrolling element for mobile layouts. */
+    flex: 1 0 auto;
+  }
+  
+
+mat-icon
+{
+    color: black !important;
+ 
+}
+
+.ToolBarMain
+{
+    display: flex;
+    // border-bottom: 1px solid rgb(223, 223, 223);
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.ToolBarLeft
+{
+    display: flex;
+    justify-items: left;
+    justify-content: space-between;
+    width: 1000px;
+    opacity: 0.9;
+}
+
+.ToolBarRight
+{
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+}
+
+.Burger
+{
+    margin-left: 10px;
+    border: transparent;
+   background-color: transparent;
+    border-radius: 50%;
+    width: 370px;
+    height: 60px;
+    font-size: bolder;
+   
+}
+
+.Burger:hover{
+    background-color: rgb(239, 239, 239);
+
+}
+
+.Logo
+{
+    margin-right: 10px;
+}
+
+.MenuLogo
+{
+    display: flex;
+    align-items: center;
+}
+
+
+.HomeTitle
+{
+    color: black;
+    margin-bottom: 0px;
+}
+
+.SearchBar
+{
+    background-color: rgb(239, 239, 239);
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    margin-left: 100px;
+    width: 500%;
+    height: 8vh;
+}
+
+.SearchArea
+{
+    border: 0px;
+    background-color: transparent;
+    outline-style: none;
+    width: 90%;
+    font-size: 15px;
+}
+
+.SearchBar:focus-within
+{
+    background-color: white;
+    box-shadow: 0px 1px 4px 1px rgb(159, 159, 159);
+}
+
+.SearchIcon
+{
+    margin: 0px 10px;
+    opacity: 0.64;
+}
+
+.NavItemsContent,p
+{
+height: 30px;
+font-weight:550;
+font-size: 17px;
+margin-top: 5px;
+// column-gap: 100px;
+}
+
+.RightIcons
+{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.InRight-Left
+{
+    display: flex;
+    align-items: center;
+    margin-right: 35px;
+    opacity: 0.54;
+    gap: 15px;
+    img{
+        height: 30px;
+       
+    }
+}
+
+.InRight-Right
+{
+    display: flex;
+    align-items: center;
+    opacity: 0.54;
+
+    img{
+        height: 35px;
+    }
+
+}
+
+
+
+.ToolbarSpaces
+{
+    margin-right: 15px;
+}
+
+mat-sidenav
+{
+    border: none;
+}
+
+.MainListBody
+{
+    width: 280px;
+
+}
+
+
+
+.NavItems
+{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    img {
+        margin-left: 5px;
+        opacity: 0.54;
+    }
+    
+}
+
+
+.NavItemsContent
+{
+    display: flex;
+}
+
+mat-sidenav :focus
+{
+    background-color: rgb(254,239,195);
+}
+
+.NavItems p
+{
+    margin-bottom: 0;
+    margin-left: 50px;
+}
+
+.NavItems img
+{
+    margin-left: 5px;
+}
+
+mat-sidenav-content
+{
+    background-color: white;
+}
+

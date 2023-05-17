@@ -1,0 +1,18 @@
+<div class="displayNoteContainer">
+  <mat-card class="matcard" *ngFor="let Note of AllNotesData | searchpipe : searchText" [style.background]="Note.color">
+    <mat-card-content>
+      <div class="mainContainer">
+        <div class="title" (click)="openDialauge(Note)">
+          <div class="innerTitle" placeholder="Title">{{ Note.title }}</div>
+          <div class="pin"><img src="../../../assets/Pin.svg" /></div>
+        </div>
+        <div class="Description" (click)="openDialauge(Note)">{{ Note.description }}</div>
+
+        <div class="icon">
+
+          <app-icons [note]="Note" (NotesDisplay)="reciveNotesDisplay($event)"></app-icons>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
